@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": " "
+    "url": "git+https://github.com/Bruno0751/npm.git"
   },
   "keywords": [
     "npm",
@@ -19,5 +19,9 @@
   "dependencies": {
     "next": "^14.1.0",
     "react": "^18.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Bruno0751/npm/issues"
+  },
+  "homepage": "https://github.com/Bruno0751/npm#readme"
 }
