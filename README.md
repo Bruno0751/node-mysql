@@ -1,3 +1,6 @@
+node 12.22.12
+npm 6.14.16
+
 npm init -- criar meta dados
 
 npm run (comando test)
