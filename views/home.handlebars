@@ -1,0 +1,16 @@
+<h2>Buscar</h2>
+
+<ul>
+    <li><a href="/">Buscar</a></li>
+    <li><a href="cad">Cadastrar</a></li>
+</ul>
+
+{{#each lista}}
+<li>ID: {{this.dataValues.id}}</li>
+<li>NOME: {{this.dataValues.nome}}</li>
+<li>IDADE: {{this.dataValues.idade}}</li>
+<li>CRIAÇÃO: {{this.dataValues.createdAt}}</li>
+<li>ATUALIZAÇÃO: {{this.dataValues.updatedAt}}</li>
+<a href="deletar/{{this.dataValues.id}}"><button type="button">Deletar</button></a>
+<hr>
+{{/each}}
