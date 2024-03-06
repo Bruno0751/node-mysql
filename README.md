@@ -1,7 +1,7 @@
 node 12.22.12
 npm 6.14.16
 Node.js and npm -- (https://nodejs.org/en)
-[https://nodejs.org/en]
+https://nodejs.org/en
 
 npm init
 
