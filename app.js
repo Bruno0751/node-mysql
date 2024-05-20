@@ -49,13 +49,15 @@ app.post('/add', function (req, res) {
     }).then(function () {
         res.redirect("/")
     }).catch(function (erro) {
-        res.send("Erro  ao Criar Usuario " + erro)
+        res.send("Erro ao Criar Usuario " + erro)
     })
 })
 app.get('/deletar/:id', function (req, res) {
     Post.destroy({where: {'id': req.params.id}}).then(function() {
-        res.send('OK')
+        alert("REGISTRO DELETADO");
+        res.render('cad')
     }).catch(function(erro) {
+        alert("REGISTRO DELETADO");
         res.send('erro')
     })
 })
