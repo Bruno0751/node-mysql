@@ -1,20 +1,27 @@
-<h2>Cadastro</h2>
-
-<ul>
-    <li><a href="/">Buscar</a></li>
-    <li><a href="cad">Cadastrar</a></li>
-</ul>
-
-<form action="/add" method="POST">
-    <div>
-        <input type="text" name="txtNome" id="" placeholder="Nome"
-            style="border-radius: 10px; width: 70%; height: 20px; text-align: center; margin-bottom: 11px;">
-    </div>
-    <div>
-        <input type="number" name="numIdade" id="" placeholdetr="Idade"
-            style="border-radius: 10px; width: 70%; height: 20px; text-align: center; margin-bottom: 11px;">
-    </div>
-    <div>
-        <input type="submit" value="Cadastrar Postagem" style="border-radius: 10px;" onclick="salvar()">
-    </div>
-</form>
+<header>
+    <h1>node-mysql</h1>
+</header>
+<section>
+    <nav>
+        <ul>
+            <li><a href="/" class='a-menu'>Buscar</a></li>
+            <li><a href="cad" class='a-menu'>Cadastrar</a></li>
+        </ul>
+    </nav>
+    <form action="/add" method="POST">
+        <div>
+            <input type="text" name="txtNome" id="" placeholder="Nome"
+                style="border-radius: 10px; width: 70%; height: 20px; text-align: center; margin-bottom: 11px;">
+        </div>
+        <div>
+            <input type="number" name="numIdade" id="" placeholdetr="Idade"
+                style="border-radius: 10px; width: 70%; height: 20px; text-align: center; margin-bottom: 11px;">
+        </div>
+        <div>
+            <input type="submit" value="Cadastrar Postagem" style="border-radius: 10px;" onclick="salvar()">
+        </div>
+    </form>
+</section>
+<footer>
+    <address>&copy;Bruno Gressler da Silveira</address>
+</footer>

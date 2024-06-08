@@ -1,16 +1,52 @@
-<h2>Buscar</h2>
-
-<ul>
-    <li><a href="/">Buscar</a></li>
-    <li><a href="cad">Cadastrar</a></li>
-</ul>
-
-{{#each lista}}
-<li>ID: {{this.dataValues.id}}</li>
-<li>NOME: {{this.dataValues.nome}}</li>
-<li>IDADE: {{this.dataValues.idade}}</li>
-<li>CRIAÇÃO: {{this.dataValues.createdAt}}</li>
-<li>ATUALIZAÇÃO: {{this.dataValues.updatedAt}}</li>
-<a href="deletar/{{this.dataValues.id}}"><button type="button">Deletar</button></a>
-<hr>
-{{/each}}
+<header>
+    <h1>node-mysql</h1>
+</header>
+<section>
+    <nav>
+        <ul>
+            <li><a href="/" class='a-menu'>Buscar</a></li>
+            <li><a href="cad" class='a-menu'>Cadastrar</a></li>
+        </ul>
+    </nav>
+    <table class='tabela'>
+        <thead>
+            <tr>
+                <th class='tabela'>ID</th>
+                <th class='tabela'>Nome</th>
+                <th class='tabela'>Idade</th>
+                <th class='tabela'>Data</th>
+                <th class='tabela'>Hora</th>
+                <th class='tabela'>Deletar</th>
+                <th class='tabela'>Atualizar</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each lista}}
+            <tr>
+                <td class='tabela'>{{this.dataValues.id}}</td>
+                <td class='tabela'>{{this.dataValues.nome}}</td>
+                <td class='tabela'>{{this.dataValues.idade}}</td>
+                <td class='tabela'>{{this.dataValues.createdAt}}</td>
+                <td class='tabela'>{{this.dataValues.updatedAt}}</td>
+                <td class='tabela'><a href="deletar/{{this.dataValues.id}}"><button type="button">Deletar</button></a>
+                </td>
+                <td class='tabela'></td>
+            </tr>
+            {{/each}}
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class='tabela'>ID</th>
+                <th class='tabela'>Nome</th>
+                <th class='tabela'>Idade</th>
+                <th class='tabela'>Data</th>
+                <th class='tabela'>Hora</th>
+                <th class='tabela'>Deletar</th>
+                <th class='tabela'>Atualizar</th>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+<footer>
+    <address>&copy;Bruno Gressler da Silveira</address>
+</footer>
