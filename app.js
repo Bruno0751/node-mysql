@@ -15,6 +15,7 @@ const util = require('./utl/util')
 //     res.send("<h1>Ola " + req.params.nome + "</h1>" + "<h2> Cargo " + req.params.cargo)
 // })
 // hanlebars
+const port = 8082
 app.engine('handlebars', create.engine({
     helpers: {
         foo() { return 'FOO!'; },
@@ -26,7 +27,6 @@ app.engine('handlebars', create.engine({
 }));
 app.set('view engine', 'handlebars');
 app.set('views', './views');
-// body-parser
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
@@ -61,8 +61,6 @@ app.get('/deletar/:id', function (req, res) {
         res.send('erro')
     })
 })
-app.listen(8081, function () { console.log("Conectado...\n: http://127.0.0.1:8081 \n: http://localhost:8081") })
-// module.exports = {
-//     app: app,
-//     Post: Post
-// }
+app.listen(port, () => {
+    console.log(`Conectado...\n http://127.0.0.1:${port}\n http://localhost:${port}`)
+})
